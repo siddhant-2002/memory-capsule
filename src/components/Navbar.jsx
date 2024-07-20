@@ -1,17 +1,18 @@
 import React from 'react';
+import logo from '../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <nav>
-            <div className='container mx-auto flex justify-between items-center'>
-                <div className='h-16 w-full p-3 md:h-20 md:w-auto '>
-                    <span className='flex justify-start items-end h-3/4 w-auto '><img src="logo.png" alt="logo" className='h-3/4 w-auto ' /></span>
+            <div className='flex justify-between items-center w-full px-[100px]'>
+                <div className=''>
+                    <img src={logo} alt="logo" className='h-[40px]' />
                 </div>
-                <div className='hidden md:flex space-x-4'>
-                    <span href="#" className='hover:bg-gray-700 p-2 rounded'>Home</span>
-                    <span href="#" className='hover:bg-gray-700 p-2 rounded'>About</span>
-                    <span href="#" className='hover:bg-gray-700 p-2 rounded'>Services</span>
-                    <span href="#" className='hover:bg-gray-700 p-2 rounded'>Contact</span>
+                <div className='flex font-semibold text-lg gap-16'>
+                    <Link to='/' className=''>Home</Link>
+                    <Link to='/' className=''>About</Link>
+                    <Link to='/' className=''>Services</Link>
+                    <Link to='/' className=''>Contact</Link>
                 </div>
                 <div className='md:hidden'>
                     <button className='text-white focus:outline-none'>
@@ -21,7 +22,6 @@ const Navbar = () => {
                     </button>
                 </div>
             </div>
-        </nav>
     );
 }
 
