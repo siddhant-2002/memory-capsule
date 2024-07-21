@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.roboto-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+.nunito-sans {
+  font-family: 'Nunito Sans', sans-serif;
+}

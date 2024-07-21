@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Poster from './Poster';
 
 const Profile = () => {
   return (
-    <div>Profile</div>
-  )
+    <div>
+      <Poster />
+    </div>
+  );
 }
 
-export default Profile
+export default Profile;

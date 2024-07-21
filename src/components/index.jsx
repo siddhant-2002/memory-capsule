@@ -9,7 +9,7 @@ export const Main = () => {
         <div className='lg:col-span-8 bg-gray-200 rounded-2xl flex place-content-center'>
             <Navbar />
         </div>
-        <div className='lg:col-span-6 lg:h-full bg-gray-200 row-span-8 rounded-2xl flex place-content-center'>
+        <div className='lg:col-span-6 lg:h-full bg-gray-200 row-span-8 rounded-2xl flex place-content-center  '>
             <Feed />
         </div>
         <div className='lg:col-span-2 lg:h-full bg-gray-200 row-span-8 rounded-2xl flex place-content-center'>
