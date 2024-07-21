@@ -13,6 +13,7 @@ const Navbar = () => {
                     <Link to='/' className=''>About</Link>
                     <Link to='/' className=''>Services</Link>
                     <Link to='/' className=''>Contact</Link>
+                    <Link to='/settings' className=''>Setting</Link>
                 </div>
                 <div className='md:hidden'>
                     <button className='text-white focus:outline-none'>
