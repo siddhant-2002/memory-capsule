@@ -4,11 +4,13 @@ import "./App.css";
 // import Feed from "./components/Feed";
 // import Navbar from "./components/Navbar";
 import {Main} from "./components/index";
+import { Settings } from "./components/Feed/Settings";
 
 function App() {
 	return (
 		<div>
-			<Main />
+			{/* <Main /> */}
+			<Settings/>
 		</div>
 		// <div className="App overflow-y-hidden flex flex-col items-center  p-4 md:p-7 ">
 		// 	<div className="bg-gray-200 rounded-3xl  md:w-[92vw]">
