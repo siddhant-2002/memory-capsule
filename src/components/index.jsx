@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Feed from './Feed'
+import Profile from './Profile'
 
 export const Main = () => {
   return (
@@ -13,7 +14,7 @@ export const Main = () => {
             <Feed />
         </div>
         <div className='lg:col-span-2 lg:h-full bg-green-500 row-span-8 rounded-2xl flex place-content-center'>
-            <h1 className='text-4xl font-bold'>Profile here</h1>
+            <Profile/>
         </div>
     </div>
   )

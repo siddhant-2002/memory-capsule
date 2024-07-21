@@ -1,8 +1,8 @@
 import React from "react";
 // import Home from './pages/Home';
 import "./App.css";
-import Feed from "./components/Feed";
-import Navbar from "./components/Navbar";
+// import Feed from "./components/Feed";
+// import Navbar from "./components/Navbar";
 import {Main} from "./components/index";
 
 function App() {
