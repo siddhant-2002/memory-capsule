@@ -9,7 +9,7 @@ export const Main = () => {
             {/* <h1 className='text-4xl font-bold'>Navbar here</h1> */}
             <Navbar />
         </div>
-        <div className='lg:col-span-6 lg:h-full bg-blue-500 row-span-8 rounded-2xl flex place-content-center'>
+        <div className='lg:col-span-6 lg:h-full bg-blue-500 row-span-8 rounded-2xl flex place-content-center overflow-y-hidden border-2'>
             <Feed />
         </div>
         <div className='lg:col-span-2 lg:h-full bg-green-500 row-span-8 rounded-2xl flex place-content-center'>
