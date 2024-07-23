@@ -11,7 +11,7 @@ import { Home } from './Feed/Home'
 const Feed = (props) => {
     
     return (
-        <div className=" flex justify-center items-center">
+        <div className=" flex w-full justify-center items-center">
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/capsule' element={<Capsule />} />

@@ -47,7 +47,7 @@ export const Settings = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-5">
+    <div className='h-full w-full flex flex-col items-center  overflow-x-hidden overflow-scroll p-10'>
       <h2 className="text-2xl font-bold mb-4">Profile Page</h2>
       {!isEditable ? (
         <div>
@@ -61,15 +61,18 @@ export const Settings = () => {
         </div>
       ) : (
         <form onSubmit={handleUpdateProfile}>
-          <div className="mb-4">
+          <div className="mb-4 ">
             <label className="block text-gray-700 text-sm font-bold mb-2">Profile Photo:</label>
             <input
               type="file"
               name="profilePhoto"
               onChange={handlePhotoChange}
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow-lg border-2 border-gray-300 rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
             />
-            <img src={profileData.profilePhoto} alt="Profile Preview" className="mt-4 w-32 h-32 object-cover rounded-full" />
+            <div className='flex flex-col items-center'>
+              <img src={profileData.profilePhoto} alt="Profile Preview" className="mt-4 w-32 h-32 object-cover rounded-full" />
+            </div>
+            
           </div>
           {/* Additional form fields for editing */}
           <div className="mb-4">

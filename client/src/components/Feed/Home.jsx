@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Home = () => {
   return (
-    <div className='w-[100%] h-[100%] overflow-x-hidden overflow-scroll p-10'>
+    <div className='h-full overflow-x-hidden overflow-scroll p-10'>
         {/* About Memory Capsule */}
         <div className="flex flex-wrap items-center">
           <div className="w-full md:w-1/2 p-4">
