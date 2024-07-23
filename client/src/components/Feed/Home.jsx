@@ -2,8 +2,7 @@ import React from 'react'
 
 export const Home = () => {
   return (
-    <div>
-      <div className="max-w-4xl mx-auto p-10  ">
+    <div className='w-[100%] h-[100%] overflow-x-hidden overflow-scroll p-10'>
         {/* About Memory Capsule */}
         <div className="flex flex-wrap items-center">
           <div className="w-full md:w-1/2 p-4">
@@ -53,7 +52,6 @@ export const Home = () => {
             <img src="getintouch.png" alt="Get In Touch" className="rounded-lg shadow-md" />
           </div>
         </div>
-      </div>
     </div>
   )
 }
