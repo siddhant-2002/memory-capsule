@@ -47,7 +47,7 @@ export const Settings = () => {
   };
 
   return (
-    <div className='h-full w-full flex flex-col items-center  overflow-x-hidden overflow-scroll p-10'>
+    <div className='h-full w-full flex flex-col items-center hide-scrollbar overflow-x-hidden overflow-scroll p-10'>
       <h2 className="text-2xl font-bold mb-4">Profile Page</h2>
       {!isEditable ? (
         <div>

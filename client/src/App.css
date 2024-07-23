@@ -6,3 +6,24 @@
 .nunito-sans {
   font-family: 'Nunito Sans', sans-serif;
 }
+
+.bg-gradient {
+  background-image: linear-gradient(to left top, #420427, #410a32, #3d113d, #361948, #2b2052, #232b5d, #173667, #00406f, #005178, #00617b, #006f7a, #217d77);
+}
+
+/* In your styles.css file */
+.bg-blur {
+  background-color: rgba(200, 200, 200, 0.5); /* White with 50% opacity */
+  backdrop-filter: blur(10px); /* Blur effect */
+}
+
+
+/* styles.css */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* for IE and Edge */
+  scrollbar-width: none;  /* for Firefox */
+}

@@ -20,7 +20,7 @@ export const Capsule = () => {
   }, []);
 
   return (
-    <div className='w-[100%] h-[100%] overflow-scroll overflow-x-hidden'>
+    <div className='w-[100%] h-[100%] overflow-scroll overflow-x-hidden hide-scrollbar'>
       <div className="w-[100%]  flex flex-col gap-3 sticky top-0 bg-gradient-to-b from-black text-white px-6 pb-8 ">
         <h1 className="text-[70px] font-bold">{time}</h1>
         <p className="text-4xl font-semibold ">CAPSULE NAME</p>

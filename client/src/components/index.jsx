@@ -21,16 +21,16 @@ export const Main = () => {
 
     // </div>
 
-    <div className='h-[100vh] w-[100vw]  flex flex-col bg-white gap-y-6 p-10 gap-x-6 overflow-y-hidden  '>
+    <div className='h-[100vh] w-[100vw] text-white flex flex-col bg-gradient gap-y-6 p-10 gap-x-6 overflow-y-hidden  '>
 
-      <div className=' bg-gray-200 h-[50vh] rounded-2xl flex place-content-center'>
+      <div className=' bg-blur h-[50vh] text-white rounded-2xl flex place-content-center'>
         <Navbar />
       </div>
       <div className='flex  gap-6'>
-        <div className='  bg-gray-200 w-[100vw] h-[80vh] rounded-2xl flex place-content-center border-2 '>
+        <div className='  bg-blur w-[100vw] h-[80vh] text-white rounded-2xl flex place-content-center border-2 '>
           <Feed />
         </div>
-        <div className=' bg-gray-200  rounded-2xl flex place-content-center'>
+        <div className=' bg-blur  rounded-2xl text-white flex place-content-center'>
           <Profile />
         </div>
       </div>
