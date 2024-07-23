@@ -10,10 +10,10 @@ const Navbar = () => {
                 </div>
                 <div className='flex font-semibold text-lg gap-16'>
                     <Link to='/' className=''>Home</Link>
-                    <Link to='/' className=''>About</Link>
-                    <Link to='/' className=''>Services</Link>
-                    <Link to='/' className=''>Contact</Link>
-                    <Link to='/settings' className=''>Setting</Link>
+                    <Link to='/capsule' className=''>Capsule</Link>
+                    <Link to='/settings' className=''>Settings</Link>
+                    <Link to='/login' className=''>Login</Link>
+                    <Link to='/signup' className=''>signup</Link>
                 </div>
                 <div className='md:hidden'>
                     <button className='text-white focus:outline-none'>
