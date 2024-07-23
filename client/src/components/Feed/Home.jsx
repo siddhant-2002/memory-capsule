@@ -27,7 +27,7 @@ export const Home = () => {
         </div>
 
         {/* Why Choose Us */}
-        <div className="flex flex-wrap items-center">
+        {/* <div className="flex flex-wrap items-center">
           <div className="w-full md:w-1/2 p-4">
             <img src="whychooseus.png" alt="Why Choose Us" className="rounded-lg shadow-md" />
           </div>
@@ -35,7 +35,7 @@ export const Home = () => {
             <h2 className="text-2xl font-bold text-gray-800">Why Choose Us</h2>
             <p className="mt-2 text-gray-600">At Memory Capsule, we understand the importance of preserving memories. Our platform is built with the latest technology to ensure your memories are kept safe and secure. With our easy-to-use interface and dedicated support team, creating and accessing your memory capsules has never been easier.</p>
           </div>
-        </div>
+        </div> */}
 
         {/* Get In Touch */}
         <div className="flex flex-wrap items-center">
