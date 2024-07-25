@@ -1,94 +1,49 @@
 import React, { useState } from 'react';
-import './LoginRegister.css';
-import { FaUser, FaLock } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
-
+import 'tailwindcss/tailwind.css';
 
 const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-    const [action, setAction] = useState('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle login logic here
+    console.log('Email:', email);
+    console.log('Password:', password);
+  };
 
-    const registerLink = () => {
-        setAction('active');
-    };
-
-    const loginLink = () => {
-        setAction('');
-    };
-
-
-    return (
-        <div className={`wrapper${action}`}>
-
-            <div className='form-box login'>
-                <form action="">
-                    <h1>Login</h1>
-
-                    <div className='input-box'>
-                        <input type="text" placeholder='Username' required/>
-                        <FaUser className='icon'/>
-                    </div>
-
-                    <div className='input-box'>
-                        <input type="password" placeholder='Password' required/>
-                        <FaLock className='icon'/>
-                    </div>
-
-                    <div className='remember-forgot'>
-                        <label>
-                            <input type="checkbox"/> Remember me
-                        </label>
-                        <a href='#'>Forgot Password?</a>
-                    </div>
-
-                    <button type="Submit">Login</button>
-
-                    <div className='register-link'>
-                        <p>Don't have an account? <a href='#' onClick={registerLink} >Register</a> </p>
-                    </div>
-
-                </form>
-            </div>
+  return (
+    <div className='w-[100%] h-[100%] flex items-center justify-center  overflow-scroll overflow-x-hidden hide-scrollbar'>
 
 
-            {/* SIngin */}
-
-            <div className='form-box register'>
-                <form action="">
-                    <h1>SingIn</h1>
-
-                    <div className='input-box'>
-                        <input type="text" placeholder='Username' required/>
-                        <FaUser className='icon'/>                   
-                    </div>
-
-                    <div className='input-box'>
-                        <input type="email" placeholder='Email' required/>
-                        <SiGmail className='icon'/>
-                    </div>
-
-                    <div className='input-box'>
-                        <input type="password" placeholder='Password' required/>
-                        <FaLock className='icon'/>
-                    </div>
-
-                    <div className='remember-forgot'>
-                        <label> <input type="checkbox"/> I agree to the terms & Conditions </label>
-                    </div>
-
-                    <button type="Submit">SignIn</button>
-
-                    <div className='register-link'>
-                        <p>Already have an account? <a href='#' onClick={loginLink} >LogIn</a> </p>
-                    </div>
-
-                </form>
-            </div>
-
-           
-            
-        </div>
-    )
-}
+   
+    <form onSubmit={handleSubmit} className=" p-6 w-[40%] bg-transparent  rounded-lg shadow-md">
+      <div className="mb-4">
+        <label className="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
+      </div>
+      <div className="mb-6">
+        <label className="block text-gray-700 text-sm font-bold mb-2">Password:</label>
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
+      </div>
+      <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        Login
+      </button>
+    </form>
+    </div>
+  );
+};
 
 export default Login;
