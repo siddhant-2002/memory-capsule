@@ -4,7 +4,7 @@ import { FaUser, FaLock } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
 
-const LoginRegister = () => {
+const Login = () => {
 
     const [action, setAction] = useState('');
 
@@ -91,4 +91,4 @@ const LoginRegister = () => {
     )
 }
 
-export default LoginRegister;
+export default Login;
