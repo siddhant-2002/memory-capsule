@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Login.css';
 import { FaUser, FaLock } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import 'tailwindcss/tailwind.css';
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -90,5 +92,5 @@ const Login = () => {
         </div>
     )
 }
-
+   
 export default Login;
