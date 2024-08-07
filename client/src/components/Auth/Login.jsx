@@ -5,19 +5,19 @@ import { SiGmail } from "react-icons/si";
 import 'tailwindcss/tailwind.css';
 import { Link } from 'react-router-dom';
 
-
 const Login = () => {
 
     const [action, setAction] = useState('');
 
-    const registerLink = () => {
+    const registerLink = (e) => {
+        e.preventDefault();
         setAction(' active');
     };
 
-    const loginLink = () => {
+    const loginLink = (e) => {
+        e.preventDefault();
         setAction('');
     };
-
 
     return (
         <div className={`wrapper${action}`}>
@@ -40,24 +40,21 @@ const Login = () => {
                         <label>
                             <input type="checkbox"/> Remember me
                         </label>
-                        <a href='#'>Forgot Password?</a>
+                        <Link to='/forgot-password'>Forgot Password?</Link>
                     </div>
 
-                    <button type="Submit">Login</button>
+                    <button type="submit">Login</button>
 
                     <div className='register-link'>
-                        <p>Don't have an account? <a href='#' onClick={registerLink} >Register</a> </p>
+                        <p>Don't have an account? <Link to='#' onClick={registerLink}>Register</Link> </p>
                     </div>
 
                 </form>
             </div>
 
-
-            {/* SIngin */}
-
             <div className='form-box register'>
                 <form action="">
-                    <h1>SingIn</h1>
+                    <h1>Sign Up</h1>
 
                     <div className='input-box'>
                         <input type="text" placeholder='Username' required/>
@@ -78,19 +75,16 @@ const Login = () => {
                         <label> <input type="checkbox"/> I agree to the terms & Conditions </label>
                     </div>
 
-                    <button type="Submit">SignIn</button>
+                    <button type="submit">Sign Up</button>
 
                     <div className='register-link'>
-                        <p>Already have an account? <a href='#' onClick={loginLink} >LogIn</a> </p>
+                        <p>Already have an account? <Link to='#' onClick={loginLink}>Log In</Link> </p>
                     </div>
 
                 </form>
             </div>
-
-           
-            
         </div>
     )
 }
-   
+
 export default Login;
